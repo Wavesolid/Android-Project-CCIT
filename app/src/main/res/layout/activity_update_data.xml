@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/textviewpencarian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:background="#B388FF"
+        android:text="PENCARIAN"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputNik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:hint="Masukan NIK"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCari" />
+
+    <Button
+        android:id="@+id/buttonCari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="cari"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNik" />
+
+    <Button
+        android:id="@+id/updateDataButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginRight="160dp"
+        android:text="update"
+        app:backgroundTint="#8BC34A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCari" />
+
+    <Spinner
+        android:id="@+id/spinnerAgamaEdit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:entries="@array/agamaSpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewStatus"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAgama" />
+
+    <TextView
+        android:id="@+id/textViewAgama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:background="#B388FF"
+        android:text="AGAMA"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonTglEdit"
+        app:layout_constraintTop_toBottomOf="@+id/editTmpt" />
+
+    <EditText
+        android:id="@+id/editTmpt"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Masukan Tempat"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewTgl"
+        app:layout_constraintTop_toBottomOf="@+id/textTmpt" />
+
+    <TextView
+        android:id="@+id/textTmpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginRight="70dp"
+        android:background="#B388FF"
+        android:text="TEMPAT LAHIR"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editNama"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupEdit" />
+
+    <TextView
+        android:id="@+id/textKelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="102dp"
+        android:layout_marginRight="102dp"
+        android:background="#B388FF"
+        android:text="KELAMIN"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonCari"
+        app:layout_constraintTop_toBottomOf="@+id/inputNik" />
+
+    <TextView
+        android:id="@+id/textNamaEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginRight="178dp"
+        android:background="#B388FF"
+        android:text="NAMA"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/textKelamin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCari" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="151dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Masukan Nama"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/textKelamin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNamaEdit" />
+
+
+    <TextView
+        android:id="@+id/textViewTgl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:background="#B388FF"
+        android:text="TANGGAL LAHIR"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/textTmpt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNama" />
+
+    <EditText
+        android:id="@+id/editTgl"
+        android:layout_width="147dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="Masukan Tanggal"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/editTmpt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTgl" />
+
+    <Button
+        android:id="@+id/backButtonEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="282dp"
+        android:layout_marginLeft="282dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:text="kembali"
+        app:backgroundTint="#F44336"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateDataButton" />
+
+    <Spinner
+        android:id="@+id/spinnerStatusEdit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:entries="@array/statusSpinner"
+        app:layout_constraintEnd_toStartOf="@+id/spinnerAgamaEdit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStatus" />
+
+    <TextView
+        android:id="@+id/textViewStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        android:background="#B388FF"
+        android:text="STATUS"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@+id/textViewAgama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTglEdit" />
+
+    <Button
+
+        android:id="@+id/buttonTglEdit"
+        android:layout_width="107dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginRight="110dp"
+        android:gravity="center"
+        android:text="Tanggal"
+        android:textAllCaps="true"
+        android:textSize="12sp"
+        app:backgroundTint="#00BCD4"
+        app:layout_constraintEnd_toStartOf="@+id/editTmpt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTgl" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEdit"
+        android:layout_width="131dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/editNama"
+        app:layout_constraintTop_toBottomOf="@+id/textKelamin">
+
+        <RadioButton
+            android:id="@+id/radioButtonLakiEdit"
+            android:layout_width="119dp"
+            android:layout_height="19dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="Laki Laki"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPerempuanEdit"
+            android:layout_width="119dp"
+            android:layout_height="19dp"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:text="Perempuan"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
